@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5940f97b1d974e829250c5ce3afa781a {
+                #map_d24c8330b3d34e619a1c7f2bb71efc3c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -32,68 +32,20 @@
                 }
             </style>
         
-    
-                    <style>
-                        .foliumpopup {
-                            margin: auto;
-                        }
-                       .foliumpopup table{
-                            margin: auto;
-                        }
-                        .foliumpopup tr{
-                            text-align: left;
-                        }
-                        .foliumpopup th{
-                            padding: 2px; padding-right: 8px;
-                        }
-                    </style>
-            
-    
-                    <style>
-                        .foliumpopup {
-                            margin: auto;
-                        }
-                       .foliumpopup table{
-                            margin: auto;
-                        }
-                        .foliumpopup tr{
-                            text-align: left;
-                        }
-                        .foliumpopup th{
-                            padding: 2px; padding-right: 8px;
-                        }
-                    </style>
-            
-    
-                    <style>
-                        .foliumpopup {
-                            margin: auto;
-                        }
-                       .foliumpopup table{
-                            margin: auto;
-                        }
-                        .foliumpopup tr{
-                            text-align: left;
-                        }
-                        .foliumpopup th{
-                            padding: 2px; padding-right: 8px;
-                        }
-                    </style>
-            
 </head>
 <body>    
     
-            <div class="folium-map" id="map_5940f97b1d974e829250c5ce3afa781a" ></div>
+            <div class="folium-map" id="map_d24c8330b3d34e619a1c7f2bb71efc3c" ></div>
         
 </body>
 <script>    
     
-            var map_5940f97b1d974e829250c5ce3afa781a = L.map(
-                "map_5940f97b1d974e829250c5ce3afa781a",
+            var map_d24c8330b3d34e619a1c7f2bb71efc3c = L.map(
+                "map_d24c8330b3d34e619a1c7f2bb71efc3c",
                 {
-                    center: [34.0165568, -118.4725835],
+                    center: [34.0165338, -118.4716974],
                     crs: L.CRS.EPSG3857,
-                    zoom: 15,
+                    zoom: 20,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -103,168 +55,47 @@
 
         
     
-            var tile_layer_4295b06cb4a14d0f98e766f7a3a9aa8f = L.tileLayer(
-                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_5940f97b1d974e829250c5ce3afa781a);
+            var tile_layer_21b2f4ad0e584efc98a3aa9786b8ec58 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d24c8330b3d34e619a1c7f2bb71efc3c);
         
     
-        function geo_json_530722e81414486f89c352db65411775_pointToLayer(feature, latlng) {
-            var opts = {};
-            
-            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
-            const iconRootAlias = L.AwesomeMarkers
-            opts.icon = new iconRootAlias.Icon(iconOptions)
-            
-            return new L.Marker(latlng, opts)
-        }
+            var marker_7e1c06d4c35841cb87ddb34d7d9126bc = L.marker(
+                [34.0160977, -118.4729945],
+                {}
+            ).addTo(map_d24c8330b3d34e619a1c7f2bb71efc3c);
+        
+    
+        var popup_bb123a6abac24319a674ad557aa096ae = L.popup({"maxWidth": "100%"});
 
-        function geo_json_530722e81414486f89c352db65411775_onEachFeature(feature, layer) {
-            layer.on({
-            });
-        };
-        var geo_json_530722e81414486f89c352db65411775 = L.geoJson(null, {
-                onEachFeature: geo_json_530722e81414486f89c352db65411775_onEachFeature,
-            
-                pointToLayer: geo_json_530722e81414486f89c352db65411775_pointToLayer
-        });
+        
+            var html_e280f4839cf04827a62600dda773a30a = $(`<div id="html_e280f4839cf04827a62600dda773a30a" style="width: 100.0%; height: 100.0%;"><b>Fitness Pool</b></div>`)[0];
+            popup_bb123a6abac24319a674ad557aa096ae.setContent(html_e280f4839cf04827a62600dda773a30a);
+        
 
-        function geo_json_530722e81414486f89c352db65411775_add (data) {
-            geo_json_530722e81414486f89c352db65411775
-                .addData(data)
-                .addTo(map_5940f97b1d974e829250c5ce3afa781a);
-        }
-            geo_json_530722e81414486f89c352db65411775_add({"bbox": [-118.49492699149, 34.005112115967, -118.44563754664, 34.0413475693863], "features": [{"bbox": [-118.48629139473, 34.019741361485, -118.48629139473, 34.019741361485], "geometry": {"coordinates": [-118.48629139473, 34.019741361485], "type": "Point"}, "id": "379", "properties": {"address": "1528", "date_modified": "2021-11-09T11:03:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "11", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.019741361485, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.48629139473, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "1528", "on_street": "11TH ST", "species_id": "43", "street": "11TH ST", "tree_id": "10917431", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.47746399441, 34.034568847245, -118.47746399441, 34.034568847245], "geometry": {"coordinates": [-118.47746399441, 34.034568847245], "type": "Point"}, "id": "409", "properties": {"address": "1232", "date_modified": "2021-11-09T07:59:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "13", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.034568847245, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.47746399441, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "1232", "on_street": "25TH ST", "species_id": "43", "street": "25TH ST", "tree_id": "10934274", "tree_number": "3"}, "type": "Feature"}, {"bbox": [-118.485429973463, 34.0413475693863, -118.485429973463, 34.0413475693863], "geometry": {"coordinates": [-118.485429973463, 34.0413475693863], "type": "Point"}, "id": "1070", "properties": {"address": "728", "date_modified": "2021-08-10T12:32:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "4", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.0413475693863, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.485429973463, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "728", "on_street": "25TH ST", "species_id": "43", "street": "25TH ST", "tree_id": "10930735", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.49142099776, 34.032023863636, -118.49142099776, 34.032023863636], "geometry": {"coordinates": [-118.49142099776, 34.032023863636], "type": "Point"}, "id": "7961", "properties": {"address": "912", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "7", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.032023863636, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49142099776, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "912", "on_street": "16TH ST", "species_id": "43", "street": "16TH ST", "tree_id": "10919475", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.48864061905, 34.035007895028, -118.48864061905, 34.035007895028], "geometry": {"coordinates": [-118.48864061905, 34.035007895028], "type": "Point"}, "id": "8584", "properties": {"address": "1907", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "7", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.035007895028, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.48864061905, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "1907", "on_street": "IDAHO AV", "species_id": "43", "street": "IDAHO AV", "tree_id": "10919180", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.49486668273, 34.024718292181, -118.49486668273, 34.024718292181], "geometry": {"coordinates": [-118.49486668273, 34.024718292181], "type": "Point"}, "id": "9196", "properties": {"address": "911", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "8", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.024718292181, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49486668273, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "911", "on_street": "CALIFORNIA AV", "species_id": "43", "street": "CALIFORNIA AV", "tree_id": "10920676", "tree_number": "4"}, "type": "Feature"}, {"bbox": [-118.49145820675, 34.027202097314, -118.49145820675, 34.027202097314], "geometry": {"coordinates": [-118.49145820675, 34.027202097314], "type": "Point"}, "id": "9242", "properties": {"address": "1102", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "8", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.027202097314, "location_address": null, "location_city": null, "location_description": "Side", "location_state": null, "location_zip": null, "longitude": -118.49145820675, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "1224", "on_street": "CALIFORNIA AV", "species_id": "43", "street": "EUCLID ST", "tree_id": "10920751", "tree_number": "7"}, "type": "Feature"}, {"bbox": [-118.49149734847, 34.02720477495, -118.49149734847, 34.02720477495], "geometry": {"coordinates": [-118.49149734847, 34.02720477495], "type": "Point"}, "id": "9558", "properties": {"address": "1102", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "8", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.02720477495, "location_address": null, "location_city": null, "location_description": "Side", "location_state": null, "location_zip": null, "longitude": -118.49149734847, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "1224", "on_street": "CALIFORNIA AV", "species_id": "43", "street": "EUCLID ST", "tree_id": "10920752", "tree_number": "8"}, "type": "Feature"}, {"bbox": [-118.49482906072, 34.024751752115, -118.49482906072, 34.024751752115], "geometry": {"coordinates": [-118.49482906072, 34.024751752115], "type": "Point"}, "id": "9599", "properties": {"address": "911", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "8", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.024751752115, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49482906072, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "911", "on_street": "CALIFORNIA AV", "species_id": "43", "street": "CALIFORNIA AV", "tree_id": "10920678", "tree_number": "6"}, "type": "Feature"}, {"bbox": [-118.49492699149, 34.024668482154, -118.49492699149, 34.024668482154], "geometry": {"coordinates": [-118.49492699149, 34.024668482154], "type": "Point"}, "id": "9995", "properties": {"address": "911", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "8", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.024668482154, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49492699149, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "911", "on_street": "CALIFORNIA AV", "species_id": "43", "street": "CALIFORNIA AV", "tree_id": "10920674", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.44566354795, 34.02296340242, -118.44566354795, 34.02296340242], "geometry": {"coordinates": [-118.44566354795, 34.02296340242], "type": "Point"}, "id": "21888", "properties": {"address": "2", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "24", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.02296340242, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.44566354795, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2", "on_street": "SANTA MONICA AIRPORT", "species_id": "43", "street": "SANTA MONICA AIRPORT", "tree_id": "10937851", "tree_number": "158"}, "type": "Feature"}, {"bbox": [-118.44563754664, 34.022954598241, -118.44563754664, 34.022954598241], "geometry": {"coordinates": [-118.44563754664, 34.022954598241], "type": "Point"}, "id": "22279", "properties": {"address": "2", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "24", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.022954598241, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.44563754664, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2", "on_street": "SANTA MONICA AIRPORT", "species_id": "43", "street": "SANTA MONICA AIRPORT", "tree_id": "10937850", "tree_number": "157"}, "type": "Feature"}, {"bbox": [-118.44608564218, 34.021678000561, -118.44608564218, 34.021678000561], "geometry": {"coordinates": [-118.44608564218, 34.021678000561], "type": "Point"}, "id": "22510", "properties": {"address": "2", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "24", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.021678000561, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.44608564218, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2", "on_street": "SANTA MONICA AIRPORT", "species_id": "43", "street": "SANTA MONICA AIRPORT", "tree_id": "10937898", "tree_number": "205"}, "type": "Feature"}, {"bbox": [-118.47335182878, 34.005112115967, -118.47335182878, 34.005112115967], "geometry": {"coordinates": [-118.47335182878, 34.005112115967], "type": "Point"}, "id": "22942", "properties": {"address": "815", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "26", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.005112115967, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.47335182878, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "815", "on_street": "ASHLAND AV", "species_id": "43", "street": "ASHLAND AV", "tree_id": "10939301", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.48198234001, 34.007230581726, -118.48198234001, 34.007230581726], "geometry": {"coordinates": [-118.48198234001, 34.007230581726], "type": "Point"}, "id": "26652", "properties": {"address": "2330", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "19", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.007230581726, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.48198234001, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2330", "on_street": "6TH ST", "species_id": "43", "street": "6TH ST", "tree_id": "10945702", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.47319870416, 34.015863562619, -118.47319870416, 34.015863562619], "geometry": {"coordinates": [-118.47319870416, 34.015863562619], "type": "Point"}, "id": "28524", "properties": {"address": "2148", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "20", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.015863562619, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.47319870416, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2148", "on_street": "16TH ST", "species_id": "43", "street": "16TH ST", "tree_id": "10947303", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.46031265893, 34.016852413787, -118.46031265893, 34.016852413787], "geometry": {"coordinates": [-118.46031265893, 34.016852413787], "type": "Point"}, "id": "28674", "properties": {"address": "2626", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "22", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.016852413787, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.46031265893, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2626", "on_street": "24TH ST", "species_id": "43", "street": "24TH ST", "tree_id": "10948131", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.460291552, 34.016830667837, -118.460291552, 34.016830667837], "geometry": {"coordinates": [-118.460291552, 34.016830667837], "type": "Point"}, "id": "28686", "properties": {"address": "2626", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "22", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.016830667837, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.460291552, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2626", "on_street": "24TH ST", "species_id": "43", "street": "24TH ST", "tree_id": "10948132", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.46175027781, 34.016857575153, -118.46175027781, 34.016857575153], "geometry": {"coordinates": [-118.46175027781, 34.016857575153], "type": "Point"}, "id": "28698", "properties": {"address": "2516", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "22", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.016857575153, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.46175027781, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2516", "on_street": "CLOVERFIELD BL", "species_id": "43", "street": "CLOVERFIELD BL", "tree_id": "10948089", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.48195785665, 34.025483211152, -118.48195785665, 34.025483211152], "geometry": {"coordinates": [-118.48195785665, 34.025483211152], "type": "Point"}, "id": "35153", "properties": {"address": "1438", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "12", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.025483211152, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.48195785665, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "1438", "on_street": "17TH ST", "species_id": "43", "street": "17TH ST", "tree_id": "10915260", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.48211210311, 34.037388753092, -118.48211210311, 34.037388753092], "geometry": {"coordinates": [-118.48211210311, 34.037388753092], "type": "Point"}, "id": "35648", "properties": {"address": "2436", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "6", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.037388753092, "location_address": null, "location_city": null, "location_description": "Side", "location_state": null, "location_zip": null, "longitude": -118.48211210311, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "1005", "on_street": "CHELSEA AV", "species_id": "43", "street": "WASHINGTON AV", "tree_id": "10917810", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.48727213249, 34.036373642908, -118.48727213249, 34.036373642908], "geometry": {"coordinates": [-118.48727213249, 34.036373642908], "type": "Point"}, "id": "36488", "properties": {"address": "852", "date_modified": "2016-03-14T10:41:00", "dbh_group": "1", "dbh_max": "6", "dbh_min": "0", "district": "6", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.036373642908, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.48727213249, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "852", "on_street": "21ST ST", "species_id": "43", "street": "21ST ST", "tree_id": "10917794", "tree_number": "2"}, "type": "Feature"}], "type": "FeatureCollection"});
+        marker_7e1c06d4c35841cb87ddb34d7d9126bc.bindPopup(popup_bb123a6abac24319a674ad557aa096ae)
+        ;
 
         
     
-    geo_json_530722e81414486f89c352db65411775.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
     
-    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
-    let fields = ["name_common", "on_address", "on_street", "location_description", "dbh_min", "height_min"];
-    let aliases = ["name_common", "on_address", "on_street", "location_description", "dbh_min", "height_min"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
+            var circle_b5e23bde78e740df8d4dc7a8ad3f9ff8 = L.circle(
+                [34.0154777, -118.4715869],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d24c8330b3d34e619a1c7f2bb71efc3c);
+        
     
-    return div
-    }
-    ,{"className": "foliumpopup"});
-                     
-    
-        function geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f_pointToLayer(feature, latlng) {
-            var opts = {};
-            
-            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
-            const iconRootAlias = L.AwesomeMarkers
-            opts.icon = new iconRootAlias.Icon(iconOptions)
-            
-            return new L.Marker(latlng, opts)
-        }
+        var popup_ef9b8861b4c046b29b4626e92405d17e = L.popup({"maxWidth": "100%"});
 
-        function geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f_onEachFeature(feature, layer) {
-            layer.on({
-            });
-        };
-        var geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f = L.geoJson(null, {
-                onEachFeature: geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f_onEachFeature,
-            
-                pointToLayer: geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f_pointToLayer
-        });
+        
+            var html_812ec1f330db424bbaace069fcf1bb7c = $(`<div id="html_812ec1f330db424bbaace069fcf1bb7c" style="width: 100.0%; height: 100.0%;">Stadium - Fixed Radius Meters</div>`)[0];
+            popup_ef9b8861b4c046b29b4626e92405d17e.setContent(html_812ec1f330db424bbaace069fcf1bb7c);
+        
 
-        function geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f_add (data) {
-            geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f
-                .addData(data)
-                .addTo(map_5940f97b1d974e829250c5ce3afa781a);
-        }
-            geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f_add({"bbox": [-118.49774838795, 34.005214379727, -118.45844699626, 34.0413251171898], "features": [{"bbox": [-118.49774838795, 34.0295690121, -118.49774838795, 34.0295690121], "geometry": {"coordinates": [-118.49774838795, 34.0295690121], "type": "Point"}, "id": "3187", "properties": {"address": "812", "date_modified": "2020-11-13T08:29:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "8", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.0295690121, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49774838795, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "812", "on_street": "11TH ST", "species_id": "43", "street": "11TH ST", "tree_id": "10920231", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.485400025877, 34.0413251171898, -118.485400025877, 34.0413251171898], "geometry": {"coordinates": [-118.485400025877, 34.0413251171898], "type": "Point"}, "id": "4169", "properties": {"address": "728", "date_modified": "2020-09-21T16:26:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "4", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.0413251171898, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.485400025877, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "728", "on_street": "25TH ST", "species_id": "43", "street": "25TH ST", "tree_id": "14094134", "tree_number": "3"}, "type": "Feature"}, {"bbox": [-118.49549662149, 34.030772333722, -118.49549662149, 34.030772333722], "geometry": {"coordinates": [-118.49549662149, 34.030772333722], "type": "Point"}, "id": "9931", "properties": {"address": "830", "date_modified": "2016-03-14T10:41:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "8", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.030772333722, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49549662149, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "830", "on_street": "EUCLID ST", "species_id": "43", "street": "EUCLID ST", "tree_id": "10919789", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.46381018087, 34.033904787187, -118.46381018087, 34.033904787187], "geometry": {"coordinates": [-118.46381018087, 34.033904787187], "type": "Point"}, "id": "12021", "properties": {"address": "3202", "date_modified": "2016-03-14T10:41:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "15", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.033904787187, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.46381018087, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "3202", "on_street": "PENNSYLVANIA AV", "species_id": "43", "street": "PENNSYLVANIA AV", "tree_id": "10923010", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.45844699626, 34.022006932667, -118.45844699626, 34.022006932667], "geometry": {"coordinates": [-118.45844699626, 34.022006932667], "type": "Point"}, "id": "20300", "properties": {"address": "2411", "date_modified": "2016-03-14T10:41:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "22", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.022006932667, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.45844699626, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2411", "on_street": "28TH ST", "species_id": "43", "street": "28TH ST", "tree_id": "10935581", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.46603955112, 34.007821263294, -118.46603955112, 34.007821263294], "geometry": {"coordinates": [-118.46603955112, 34.007821263294], "type": "Point"}, "id": "22886", "properties": {"address": "2944", "date_modified": "2016-03-14T10:41:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "26", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.007821263294, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.46603955112, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2944", "on_street": "16TH ST", "species_id": "43", "street": "16TH ST", "tree_id": "10939174", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.48440620359, 34.005214379727, -118.48440620359, 34.005214379727], "geometry": {"coordinates": [-118.48440620359, 34.005214379727], "type": "Point"}, "id": "26311", "properties": {"address": "2328", "date_modified": "2016-03-14T10:41:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "19", "height_group": "1", "height_max": "15", "height_min": "1", "latitude": 34.005214379727, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.48440620359, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2328", "on_street": "3RD ST", "species_id": "43", "street": "3RD ST", "tree_id": "10945242", "tree_number": "4"}, "type": "Feature"}, {"bbox": [-118.49130809804, 34.022036914052, -118.49130809804, 34.022036914052], "geometry": {"coordinates": [-118.49130809804, 34.022036914052], "type": "Point"}, "id": "35749", "properties": {"address": "914", "date_modified": "2016-03-14T10:41:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "11", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.022036914052, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49130809804, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "914", "on_street": "ARIZONA AV", "species_id": "43", "street": "ARIZONA AV", "tree_id": "10917126", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.49135901918, 34.021994182971, -118.49135901918, 34.021994182971], "geometry": {"coordinates": [-118.49135901918, 34.021994182971], "type": "Point"}, "id": "36520", "properties": {"address": "914", "date_modified": "2016-03-14T10:41:00", "dbh_group": "2", "dbh_max": "12", "dbh_min": "7", "district": "11", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.021994182971, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.49135901918, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "914", "on_street": "ARIZONA AV", "species_id": "43", "street": "ARIZONA AV", "tree_id": "10917125", "tree_number": "1"}, "type": "Feature"}], "type": "FeatureCollection"});
+        circle_b5e23bde78e740df8d4dc7a8ad3f9ff8.bindPopup(popup_ef9b8861b4c046b29b4626e92405d17e)
+        ;
 
         
     
-    geo_json_03fa4d7fdff74937b6f7ec7a6d236e9f.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
-    
-    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
-    let fields = ["name_common", "on_address", "on_street", "location_description", "dbh_min", "height_min"];
-    let aliases = ["name_common", "on_address", "on_street", "location_description", "dbh_min", "height_min"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
-    
-    return div
-    }
-    ,{"className": "foliumpopup"});
-                     
-    
-        function geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c_pointToLayer(feature, latlng) {
-            var opts = {};
-            
-            const iconOptions = {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
-            const iconRootAlias = L.AwesomeMarkers
-            opts.icon = new iconRootAlias.Icon(iconOptions)
-            
-            return new L.Marker(latlng, opts)
-        }
-
-        function geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c_onEachFeature(feature, layer) {
-            layer.on({
-            });
-        };
-        var geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c = L.geoJson(null, {
-                onEachFeature: geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c_onEachFeature,
-            
-                pointToLayer: geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c_pointToLayer
-        });
-
-        function geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c_add (data) {
-            geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c
-                .addData(data)
-                .addTo(map_5940f97b1d974e829250c5ce3afa781a);
-        }
-            geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c_add({"bbox": [-118.46777774596, 34.013435605127, -118.45694166137, 34.021703430087], "features": [{"bbox": [-118.45694166137, 34.021703430087, -118.45694166137, 34.021703430087], "geometry": {"coordinates": [-118.45694166137, 34.021703430087], "type": "Point"}, "id": "21078", "properties": {"address": "2448", "date_modified": "2016-03-14T10:41:00", "dbh_group": "3", "dbh_max": "18", "dbh_min": "13", "district": "23", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.021703430087, "location_address": null, "location_city": null, "location_description": "Front", "location_state": null, "location_zip": null, "longitude": -118.45694166137, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2448", "on_street": "29TH ST", "species_id": "43", "street": "29TH ST", "tree_id": "10935724", "tree_number": "1"}, "type": "Feature"}, {"bbox": [-118.46777774596, 34.013465241178, -118.46777774596, 34.013465241178], "geometry": {"coordinates": [-118.46777774596, 34.013465241178], "type": "Point"}, "id": "28522", "properties": {"address": "1703", "date_modified": "2016-03-14T10:41:00", "dbh_group": "3", "dbh_max": "18", "dbh_min": "13", "district": "21", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.013465241178, "location_address": null, "location_city": null, "location_description": "Side", "location_state": null, "location_zip": null, "longitude": -118.46777774596, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2465", "on_street": "17TH ST", "species_id": "43", "street": "MAPLE ST", "tree_id": "10947907", "tree_number": "2"}, "type": "Feature"}, {"bbox": [-118.46775316578, 34.013435605127, -118.46775316578, 34.013435605127], "geometry": {"coordinates": [-118.46775316578, 34.013435605127], "type": "Point"}, "id": "28767", "properties": {"address": "1703", "date_modified": "2016-03-14T10:41:00", "dbh_group": "3", "dbh_max": "18", "dbh_min": "13", "district": "21", "height_group": "2", "height_max": "30", "height_min": "15", "latitude": 34.013435605127, "location_address": null, "location_city": null, "location_description": "Side", "location_state": null, "location_zip": null, "longitude": -118.46775316578, "name_botanical": "Eriobotrya japonica", "name_common": "Edible Loquat", "on_address": "2465", "on_street": "17TH ST", "species_id": "43", "street": "MAPLE ST", "tree_id": "10947906", "tree_number": "3"}, "type": "Feature"}], "type": "FeatureCollection"});
-
-        
-    
-    geo_json_8588e9e820fd4fb9a8f2a7b7cd7d1a0c.bindPopup(
-    function(layer){
-    let div = L.DomUtil.create('div');
-    
-    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
-    let fields = ["name_common", "on_address", "on_street", "location_description", "dbh_min", "height_min"];
-    let aliases = ["name_common", "on_address", "on_street", "location_description", "dbh_min", "height_min"];
-    let table = '<table>' +
-        String(
-        fields.map(
-        (v,i)=>
-        `<tr>
-            <th>${aliases[i].toLocaleString()}</th>
-            
-            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
-        </tr>`).join(''))
-    +'</table>';
-    div.innerHTML=table;
-    
-    return div
-    }
-    ,{"className": "foliumpopup"});
-                     
 </script>
